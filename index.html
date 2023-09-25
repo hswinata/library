@@ -1,53 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Library</title>
-    <link rel="stylesheet" href="library.css">
+    <link rel="stylesheet" href="library.css" />
     <script src="library.js" defer></script>
-</head>
-<body>
-<div class="container">
-    <p class="title">My Books</p>
-    <div class="book-container">
-    </div>
-    <button class="button-new">ADD NEW BOOK</button>
+  </head>
+  <body>
+    <div class="container">
+      <p class="title">My Books</p>
+      <div class="book-container"></div>
+      <button class="button-new">ADD NEW BOOK</button>
 
-<!--Modal-->
-    <div class="modal">
+      <!--Modal-->
+      <div class="modal">
         <div class="modal-header">
-            <p>Book details</p>
-            <button class="button-close">&times;</button>
+          <p>Book details</p>
+          <button class="button-close">&times;</button>
         </div>
         <div class="modal-body">
-            <form action="" method="" id="form">
-                <label for="title">Title
-                    <input type="text" id="title" name="title" required>
-                </label>
+          <form action="" method="" id="form" autocomplete="off">
+            <label for="title"
+              >Title
+              <input type="text" id="title" name="title" required />
+            </label>
 
-                <label for="author">Author
-                    <input type="text" id="author" name="author" required>
-                </label>
+            <label for="author"
+              >Author
+              <input type="text" id="author" name="author" required />
+            </label>
 
-                <label for="pages">Pages
-                    <input type="number" id="pages" name="pages" required>
-                </label>
+            <label for="pages"
+              >Pages
+              <input type="number" id="pages" name="pages" required />
+            </label>
 
-                <label for="hasRead">Have you read it?
-                    <select name="hasRead" id="hasRead" required>
-                        <option value="1">Yes</option>
-                        <option value="0">No</option>
-                    </select>
-                </label>
-            </form>
+            <label for="hasRead"
+              >Have you read it?
+              <select name="hasRead" id="hasRead" required>
+                <option value="1">Yes</option>
+                <option value="0">No</option>
+              </select>
+            </label>
+          </form>
 
-            <button class="button-submit" type="submit" form="form">ADD BOOK</button>
+          <button class="button-submit" type="submit" form="form">
+            ADD BOOK
+          </button>
         </div>
-
+      </div>
     </div>
-</div>
-<div id="overlay"></div>
-</body>
+    <div id="overlay"></div>
+  </body>
 </html>
